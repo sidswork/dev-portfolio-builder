@@ -1,0 +1,96 @@
+.show-pointer {
+  cursor: pointer;
+}
+.skill-box {
+  transition: 1.5s;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-matrix {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.tool-item {
+  text-transform: lowercase;
+  transition: 1s;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+.skill-box.skill-box.is-active {
+  background: linear-gradient(238deg, #0080ff, #00f);
+}
+.skill-box.is-active:hover,
+.tag:hover {
+  color: white !important;
+  background: linear-gradient(
+    238deg,
+    red,
+    #ff8000,
+    #ff0,
+    #80ff00,
+    #0f0,
+    #00ff80,
+    #0080ff,
+    #00f,
+    #8000ff,
+    #ff0080
+  );
+  background-size: 1200% 1200%;
+  -webkit-animation: rainbow 16s ease infinite;
+  -z-animation: rainbow 16s ease infinite;
+  -o-animation: rainbow 16s ease infinite;
+  animation: rainbow 16s ease infinite;
+  cursor: crosshair;
+}
